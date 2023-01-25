@@ -49,6 +49,9 @@ const useStyles = makeStyles()((theme) => {
     },
     actionText: {
       color: theme.palette.common.white,
+      [theme.breakpoints.down('sm')]: {
+        fontSize: '1.7rem',
+      },
     },
     button: {
       backgroundColor: theme.palette.common.cyan,
@@ -118,9 +121,11 @@ function CallToActionBlock() {
 
   return (
     <Fragment>
-      <Grid item container lg={12} className={classes.container}>
+      <Grid item container xs={12} className={classes.container}>
         <Grid item container justifyContent='center' alignItems='center'>
-          <Typography variant='h2'>Advanced Statistics</Typography>
+          <Typography variant='h2' style={{ textAlign: 'center' }}>
+            Advanced Statistics
+          </Typography>
         </Grid>
         <Grid item container justifyContent='center' alignItems='center'>
           <Typography variant='body' className={classes.text}>
@@ -130,7 +135,7 @@ function CallToActionBlock() {
           </Typography>
         </Grid>
       </Grid>
-      <Grid item container className={classes.container}>
+      <Grid item container xs={12} className={classes.container}>
         <Grid
           item
           container
@@ -306,6 +311,7 @@ function CallToActionBlock() {
         justifyContent='center'
         alignItems='center'
         className={classes.bottomWrapper}
+        xs={12}
       >
         <Grid item container justifyContent='center' alignItems='center'>
           <Typography variant='h3' className={classes.actionText}>

@@ -38,6 +38,7 @@ const useStyles = makeStyles()((theme) => {
       },
       [theme.breakpoints.down('md')]: {
         textAlign: 'center',
+        paddingTop: '1rem',
       },
     },
     button: {
@@ -71,7 +72,7 @@ const useStyles = makeStyles()((theme) => {
         width: '30rem',
       },
       [theme.breakpoints.down('sm')]: {
-        width: '25rem',
+        width: '22rem',
       },
     },
     title: {
@@ -92,6 +93,9 @@ const useStyles = makeStyles()((theme) => {
       },
       [theme.breakpoints.down('sm')]: {
         fontSize: '3.5rem',
+      },
+      [theme.breakpoints.down('xs')]: {
+        fontSize: '3rem',
       },
     },
   };
