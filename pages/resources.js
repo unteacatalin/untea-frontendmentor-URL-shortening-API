@@ -12,16 +12,22 @@ const useStyles = makeStyles()((theme) => {
     container: {
       width: '100%',
       height: '100%',
-      padding: '2.4rem 30rem',
-      [theme.breakpoints.down('xl')]: {
+      padding: '2.4rem 25rem',
+      [theme.breakpoints.down('xxl')]: {
         padding: '2.4rem 15rem',
       },
-      [theme.breakpoints.down('lg')]: {
-        padding: '2.4rem 10.5rem',
+      [theme.breakpoints.down('xl')]: {
+        padding: '4rem 9rem',
       },
-      [theme.breakpoints.down('xs')]: {
-        paddingLeft: '2rem',
-        paddingRight: '2rem',
+      [theme.breakpoints.down('lg')]: {
+        padding: '4rem 5rem',
+      },
+      [theme.breakpoints.down('md')]: {
+        padding: '2.4rem 2rem',
+      },
+      [theme.breakpoints.down('sm')]: {
+        paddingLeft: '1rem',
+        paddingRight: '1rem',
       },
     },
     section: {
